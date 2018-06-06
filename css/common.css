@@ -1,0 +1,58 @@
+/*		html,body
+{
+	height: 100%;
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}*/
+
+.card {
+margin-bottom:12px;
+}
+
+.grad-grey {
+background: linear-gradient(to right, #bdc3c7, #2c3e50);
+}
+.grad-royal {
+background: linear-gradient(to right, #141e30, #243b55); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.grad-dull {
+background: linear-gradient(to right, #c9d6ff, #e2e2e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+        /* Show it's not fixed to the top */
+       table, th, td {padding: 4px; }
+        th, td {border-bottom: 1px solid #ddd;padding-left: 20px; padding-right: 20px;}
+        th {font-weight: bold;text-align: left;}
+        sup {font-size: 8px;vertical-align: 5px;}
+
+		/* iPhone 6 landscape */
+		@media only screen and (min-device-width: 375px)
+		  and (max-device-width: 667px)
+		  and (orientation: landscape)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  {
+		  table{width: 70%;}
+		  }
+		
+		/* iPhone 6 portrait */
+		@media only screen
+		  and (min-device-width: 375px)
+		  and (max-device-width: 667px)
+		  and (orientation: portrait)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  {
+		  /* Your CSS */
+		  table{width: 90%;}
+		  th, td {border-bottom: 1px solid #ddd;padding-left: 10px; padding-right: 10px;}
+		  }
+
+pre {
+font-family: "Helvetica";font-size: 1em;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;
+}
